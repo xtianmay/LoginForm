@@ -8,7 +8,7 @@ description: >
 repository: https://github.com/xtianmay/LoginForm.git
 
 screenshot:
-  file: ./screenshot.png
+  file: ./Capture5.PNG
   alt: "React Login Form UI"
   description: >
     A preview of the login form showcasing a clean and minimal 
@@ -22,17 +22,6 @@ features:
   - Basic client-side form validation
   - Lightweight and customizable structure
 
-project_structure: |
-  login-form/
-  ├── public/           # Static assets
-  ├── src/              # Source code
-  │   ├── components/   # Reusable UI components
-  │   ├── App.jsx       # Main app component
-  │   ├── main.jsx      # Entry point for Vite
-  ├── package.json      # Project metadata & dependencies
-  ├── tailwind.config.js # Tailwind configuration
-  ├── vite.config.js    # Vite configuration
-  └── README.md         # Project documentation
 
 installation:
   steps:

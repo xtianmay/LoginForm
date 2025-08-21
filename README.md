@@ -1,69 +1,77 @@
-# React + TypeScript + Vite
+project:
+  name: "React Login Form"
+  description: |
+    A modern and responsive Login UI Form built with React (Vite) 
+    and styled using Tailwind CSS. This project demonstrates 
+    reusable components, clean UI design, and simple form validation.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+repository:
+  url: "https://github.com/xtianmay/LoginForm.git"
+  clone_instructions: |
+    # Clone the repository
+    git clone https://github.com/xtianmay/LoginForm.git
+    cd LoginForm
 
-Currently, two official plugins are available:
+installation:
+  prerequisites:
+    - Node.js (v16 or higher recommended)
+    - npm (comes with Node.js)
+  steps: |
+    # Install dependencies
+    npm install
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+running:
+  dev_server: |
+    # Run the project in development mode
+    npm run dev
 
-## Expanding the ESLint configuration
+features:
+  - Responsive login UI
+  - Username & password input fields
+  - Basic form validation
+  - Tailwind CSS styling
+  - Fast development setup with Vite
+  - Mobile-friendly layout
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+screenshot:
+  image_path: "./public/screenshot.png"
+  description: |
+    Example of the Login UI form with username and password fields, 
+    styled using Tailwind CSS. The design is responsive and adjusts 
+    seamlessly for desktop and mobile layouts.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+project_structure: |
+  LoginForm/
+  ├── public/           # Static assets (place screenshot.png here)
+  ├── src/              # Source code
+  │   ├── components/   # Reusable UI components
+  │   ├── App.jsx       # Main app component
+  │   ├── main.jsx      # Vite entry point
+  ├── index.html        # HTML template
+  ├── package.json      # Project metadata & dependencies
+  ├── tailwind.config.js # Tailwind CSS configuration
+  ├── vite.config.js    # Vite configuration
+  └── README.yaml       # Project documentation
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+deployment:
+  options:
+    - name: "Vercel"
+      description: "Quick deploy for React + Vite apps"
+    - name: "Netlify"
+      description: "Drag-and-drop or connect GitHub repo"
+    - name: "GitHub Pages"
+      description: |
+        Can be used with vite-plugin-gh-pages. 
+        Not recommended without proper config.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+contributing:
+  guidelines: |
+    Contributions are welcome! 
+    - Fork the repository
+    - Create a new branch (feature/your-feature-name)
+    - Commit your changes
+    - Push and submit a pull request
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+license:
+  type: "Apache 2.0"
+  file: "LICENSE"

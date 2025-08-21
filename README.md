@@ -1,77 +1,67 @@
-project:
-  name: "React Login Form"
-  description: |
-    A modern and responsive Login UI Form built with React (Vite) 
-    and styled using Tailwind CSS. This project demonstrates 
-    reusable components, clean UI design, and simple form validation.
+name: React Login Form
+description: >
+  A modern and responsive Login UI Form built with React (Vite) 
+  and styled using TailwindCSS. This project demonstrates how to 
+  create a clean authentication interface with validation and 
+  mobile-friendly design.  
 
-repository:
-  url: "https://github.com/xtianmay/LoginForm.git"
-  clone_instructions: |
-    # Clone the repository
-    git clone https://github.com/xtianmay/LoginForm.git
-    cd LoginForm
-
-installation:
-  prerequisites:
-    - Node.js (v16 or higher recommended)
-    - npm (comes with Node.js)
-  steps: |
-    # Install dependencies
-    npm install
-
-running:
-  dev_server: |
-    # Run the project in development mode
-    npm run dev
-
-features:
-  - Responsive login UI
-  - Username & password input fields
-  - Basic form validation
-  - Tailwind CSS styling
-  - Fast development setup with Vite
-  - Mobile-friendly layout
+repository: https://github.com/xtianmay/LoginForm.git
 
 screenshot:
-  image_path: "./public/screenshot.png"
-  description: |
-    Example of the Login UI form with username and password fields, 
-    styled using Tailwind CSS. The design is responsive and adjusts 
-    seamlessly for desktop and mobile layouts.
+  file: ./screenshot.png
+  alt: "React Login Form UI"
+  description: >
+    A preview of the login form showcasing a clean and minimal 
+    design with responsive styling using TailwindCSS.
+
+features:
+  - Responsive login form UI
+  - Built with React + Vite for fast development
+  - Styled using TailwindCSS utility classes
+  - Includes username and password input fields
+  - Basic client-side form validation
+  - Lightweight and customizable structure
 
 project_structure: |
-  LoginForm/
-  ├── public/           # Static assets (place screenshot.png here)
+  login-form/
+  ├── public/           # Static assets
   ├── src/              # Source code
   │   ├── components/   # Reusable UI components
   │   ├── App.jsx       # Main app component
-  │   ├── main.jsx      # Vite entry point
-  ├── index.html        # HTML template
+  │   ├── main.jsx      # Entry point for Vite
   ├── package.json      # Project metadata & dependencies
-  ├── tailwind.config.js # Tailwind CSS configuration
+  ├── tailwind.config.js # Tailwind configuration
   ├── vite.config.js    # Vite configuration
-  └── README.yaml       # Project documentation
+  └── README.md         # Project documentation
+
+installation:
+  steps:
+    - step: Clone the repository
+      command: git clone https://github.com/xtianmay/LoginForm.git
+    - step: Navigate into the project folder
+      command: cd LoginForm
+    - step: Install dependencies
+      command: npm install
+    - step: Start the development server
+      command: npm run dev
+  note: The app will be available at http://localhost:5173 by default (Vite).
 
 deployment:
   options:
-    - name: "Vercel"
-      description: "Quick deploy for React + Vite apps"
-    - name: "Netlify"
-      description: "Drag-and-drop or connect GitHub repo"
-    - name: "GitHub Pages"
-      description: |
-        Can be used with vite-plugin-gh-pages. 
-        Not recommended without proper config.
+    - GitHub Pages
+    - Netlify
+    - Vercel
+  instructions: >
+    Run `npm run build` to generate a production-ready build.
+    Deploy the contents of the `dist/` folder to your preferred
+    hosting service.
 
 contributing:
-  guidelines: |
-    Contributions are welcome! 
-    - Fork the repository
-    - Create a new branch (feature/your-feature-name)
-    - Commit your changes
-    - Push and submit a pull request
+  guidelines: >
+    Contributions are welcome! If you'd like to improve the UI,
+    add features, or fix bugs, feel free to fork this repository,
+    create a new branch, and submit a pull request.
 
 license:
-  type: "Apache 2.0"
-  file: "LICENSE"
+  type: Apache 2.0
+  file: ./LICENSE

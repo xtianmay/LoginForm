@@ -8,7 +8,7 @@ description: >
 repository: https://github.com/xtianmay/LoginForm.git
 
 screenshot:
-  | ![High](./Capture5.PNG) |  
+   ![High](./Capture5.PNG) 
   alt: "React Login Form UI"
   description: >
     A preview of the login form showcasing a clean and minimal 
